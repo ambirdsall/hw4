@@ -1,0 +1,10 @@
+#+TITLE: Homework 4, Programming Languages Pt. B
+
+* get yr business installed?
+#+BEGIN_SRC sh
+  brew install racket
+#+END_SRC
+then
+#+BEGIN_SRC sh
+  raco pkg install drracket
+#+END_SRC
