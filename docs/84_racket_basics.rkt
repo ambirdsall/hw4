@@ -13,7 +13,7 @@
 (define y (+ x 2)) ; function call is (e1 e2 ... en): parens matter!
 
 ; basic function
-(define cube1
+(define cube1 
   (lambda (x)
     (* x (* x x))))
 
@@ -33,7 +33,7 @@
       (* x (pow1 x (- y 1)))))
 
 ; currying
-(define pow2
+(define pow2 
   (lambda (x)
     (lambda (y)
       (pow1 x y))))
