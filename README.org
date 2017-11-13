@@ -4,6 +4,7 @@
 #+BEGIN_SRC sh
   brew install racket
 #+END_SRC
+
 then
 #+BEGIN_SRC sh
   raco pkg install drracket
