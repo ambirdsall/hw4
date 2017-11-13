@@ -6,7 +6,7 @@
 (provide (all-defined-out))
 
 ;; a cosmetic macro -- adds then, else
-(define-syntax my-if 
+(define-syntax my-if
   (syntax-rules (then else)
     [(my-if e1 then e2 else e3)
      (if e1 e2 e3)]))

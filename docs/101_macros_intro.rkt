@@ -5,12 +5,12 @@
 
 (provide (all-defined-out))
 
-; You do *not* need to understand these macro definitions 
+; You do *not* need to understand these macro definitions
 ; (that is a later optional section), but we want to show
 ; uses of them
 
 ;; a cosmetic macro -- adds then, else
-(define-syntax my-if 
+(define-syntax my-if
   (syntax-rules (then else)
     [(my-if e1 then e2 else e3)
      (if e1 e2 e3)]))
