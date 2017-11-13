@@ -80,3 +80,13 @@
                          (update-next-cache-idx!)
                          result)
                   #f)))))))
+
+(define-syntax while-less
+  (syntax-rules (do)
+    [(while-less e1 do e2)
+     (letrec ([test e1]
+              [f (λ () (let ([result e2])
+                         (if (< result test)
+                             (f)
+                             #t)))])
+       (f))]))
